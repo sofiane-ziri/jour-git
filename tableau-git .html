@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style-tableau-git.css">
+		<title>Sofiane.ZIRI</title>
+	</head>
+	<body>
+		<header>   
+			<h1>Git Commanders</h1>
+		</header>
+			<div id="all">
+				<section class="colonne">
+                    <ul>
+                        <li><a href="#EFFECTUER DES CHANGEMENTS">EFFECTUER DES CHANGEMENTS</a></li></br>
+                    </br><li><a href="#CONFIGURATION DES OUTILS">CONFIGURATION DES OUTILS</a></li></br>
+                    </br> <li><a href="#GROUPER DES CHANGEMENTS">GROUPER DES CHANGEMENTS</a></li></br>
+                    </br><li><a href="#CRÉER DES DÉPÔTS">CRÉER DES DÉPÔTS</a></li></br>
+                    </br><li><a href="#CHANGEMENTS AU NIVEAU DES NOMS DE FICHIERS">CHANGEMENTS AU NIVEAU DES NOMS DE FICHIERS</a></li></br>
+                    </br><li><a href="#VÉRIFIER L'HISTORIQUE DES VERSIONS">VÉRIFIER L'HISTORIQUE DES VERSIONS</a></li></br>
+                    </br><li><a href="#EXCLURE DU SUIVI DE VERSION">EXCLURE DU SUIVI DE VERSION</a></li></br>
+                    </ul>
+				</section>
+				<section class="paragraphe">
+                    <div>
+                            <h2 id="EFFECTUER DES CHANGEMENTS">EFFECTUER DES CHANGEMENTS</h2>                     
+                            <table>
+                                <tr>
+                                  <td>$ git status</td>
+                                  <td>Liste tous les nouveaux fichiers et les fichiers modifiés à commiter</td>
+                                </tr>
+                                <tr>
+                                  <td>$ git diff</td>
+                                  <td> Montre les modifications de fichier qui ne sont pas encore indexées</td>
+                                </tr>
+                                <tr>
+                                  <td>$ git add [fichier]</td>
+                                  <td>Ajoute un instantané du fichier, en préparation pour le suivi de version</td>
+                                </tr>
+                                <tr>
+                                  <td>$ git diff --staged</td>
+                                  <td>Montre les différences de fichier entre la version indexée et la dernière
+                                    version</td>
+                                </tr>
+                                <tr>
+                                    <td>$ git reset [fichier]</td>
+                                    <td>Enleve le fichier de l'index, mais conserve son contenu</td>
+                                </tr>
+                                <tr>
+                                    <td>$ git commit -m "[message descriptif]"</td>
+                                    <td> Enregistre des instantanés de fichiers de façon permanente dans l'historique des versions</td>
+                                </tr>
+                              </table>
+                        </div>
+                        <div>
+                              <h2 id="CONFIGURATION DES OUTILS">CONFIGURATION DES OUTILS</h2>
+                              <table>
+                                  <tr>
+                                      <td>$ git config --global user.name "[nom]"</td>
+                                      <td>Définit le nom que vous voulez associer à toutes vos opérations de commit</td>
+                                  </tr>
+                                  <tr>
+                                        <td>$ git config --global user.email "[adresse email]"</td>
+                                        <td>Définit l'email que vous voulez associer à toutes vos opérations de commit</td>
+                                  </tr>
+                                  <tr>
+                                      <td>$ git config --global color.ui</td>
+                                      <td>auto Active la colorisation de la sortie en ligne de commande</td>
+                                  </tr>
+                                  <tr>
+                                      <td>$ git checkout [nom-de-branche]</td>
+                                      <td>Bascule sur la branche spécifiée et met à jour le répertoire de travail</td>
+                                  </tr>
+                                  <tr>
+                                      <td>$ git merge [nom-de-branche]</td>
+                                      <td>Combine dans la branche courante l'historique de la branche spécifiée</td>
+                                  </tr>
+                              </table>
+                            </div>
+                            <div>
+                              <h2 id="GROUPER DES CHANGEMENTS">GROUPER DES CHANGEMENTS</h2>
+                              <table>
+                                <tr>
+                                      <td>$ git branch</td>
+                                      <td>Liste toutes les branches locales dans le dépôt courant</td>
+                                </tr>
+                                <tr>
+                                    <td>$ git branch [nom-de-branche]</td>
+                                    <td>Crée une nouvelle branche</td>
+                                </tr>
+                                <tr>
+                                    <td>$ git branch [nom-de-branche]</td>
+                                    <td>Crée une nouvelle branche</td>
+                                </tr>
+                                <tr>
+                                    <td>$ git checkout [nom-de-branche]</td>
+                                    <td>Bascule sur la branche spécifiée et met à jour le répertoire de travail</td>
+                                </tr>
+                                <tr>
+                                    <td>$ git merge [nom-de-branche]</td>
+                                    <td>Combine dans la branche courante l'historique de la branche spécifiée</td>
+                                </tr>
+                                <tr>
+                                    <td>$ git branch -d [nom-de-branche]</td>
+                                    <td>Supprime la branche spécifiée</td>
+                                </tr>
+                            </table>
+                            </div>
+                            <div>
+                                <h2 id="CRÉER DES DÉPÔTS">CRÉER DES DÉPÔTS</h2>
+                                <table>
+                                    <tr>
+                                        <td>$ git init [nom-du-projet]</td>
+                                        <td>Crée un dépôt local à partir du nom spécifié</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$ git clone [url]</td>
+                                        <td>Télécharge un projet et tout son historique de versions</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div>
+                                <table>
+                                        <h2 id="CHANGEMENTS AU NIVEAU DES NOMS DE FICHIERS">CHANGEMENTS AU NIVEAU DES NOMS DE FICHIERS</h2>
+                                        <table>
+                                            <tr>
+                                                <td>$ git rm [fichier]</td>
+                                                <td>Supprime le fichier du répertoire de travail et met à jour l'index</td>
+                                            </tr>
+                                            <tr>
+                                                <td>$ git rm --cached [fichier]</td>
+                                                <td>Supprime le fichier du système de suivi de version mais le préserve localement </td>
+                                            </tr>
+                                            <tr>
+                                                <td>$ git mv [fichier-nom] [fichier-nouveau-nom]</td>
+                                                <td>Renomme le fichier et prépare le changement pour un commit</td>
+                                            </tr>
+                                </table>
+                            </div>
+                            <div>
+                                <table>
+                                    <h2 id="VÉRIFIER L'HISTORIQUE DES VERSIONS">VÉRIFIER L'HISTORIQUE DES VERSIONS</h2>
+                                    <tr>
+                                        <td>$ git log</td>
+                                        <td>Montre l'historique des versions pour la branche courante</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$ git log --follow [fichier]</td>
+                                        <td>Montre l'historique des versions, y compris les actions de renommage, pour le fichier spécifié</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$ git diff [premiere-branche]...[deuxieme-branche]</td>
+                                        <td>Montre les différences de contenu entre deux branches</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$ git show [commit]</td>
+                                        <td>Montre les modifications de métadonnées et de contenu inclues dans</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div>
+                                <table>
+                                    <h2 id="EXCLURE DU SUIVI DE VERSION">EXCLURE DU SUIVI DE VERSION</h2>
+                                    <tr>
+                                        <td>*.log
+                                            build/
+                                            temp-*</td>
+                                            <td>Un fichier texte nommé .gitignore permet d'éviter le suivi de version accidentel pour les fichiers et chemins correspondant aux paerns spécifiés</td>
+                                    </tr>
+                                    <tr>
+                                        <td>$ git ls-files --other --ignored --exclude-standard</td>
+                                        <td>Liste tous les fichiers exclus du suivi de version dans ce projet</td>
+                                    </tr>
+                                </table>
+                            </div>
+				</section>
+			</div>
+		<footer>© All right reserved Sofiane ZIRI</footer>
+	</body>
+</html>
